@@ -22,7 +22,7 @@ body {
   justify-content: center;
   background: url('./robot.gif');
   background-size: contain;
-  background-position: left center;
+  background-position: left -65px;
   background-repeat: no-repeat;
 }
 
@@ -37,7 +37,7 @@ body {
   color: #fff;
   background: #ff3482; 
   border-radius: 5px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
 
   transition: all 0.1s;
 }
@@ -61,31 +61,18 @@ body {
 }
 
 
-
-/* Media Query - tablet */
-@media screen and (max-width: 1200px) {
+/* Media Query - landscape tablet*/
+@media screen and (max-width: 1200px) { 
   .container {
     background-size: cover;
-    background-position: center -50px;
+    background-position: center -80px;
+    justify-content: flex-end;
+    padding-bottom: 50px;
   }
-  
-  #button {
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
-    font-size: 2.8rem;
-    padding: 2.4rem 3.2rem;
-  } 
 }
 
-/* Media Query - small tablet or phone */
-@media screen and (max-width: 600px) { 
-  #button {
-    font-size: 2.4rem;
-    padding: 2.4rem 3.2rem;
-  } 
-}
-
-/* Media Query - small phone */
-@media screen and (max-width: 450px) { 
+/* Media Query - phone */
+@media screen and (max-width: 550px) { 
   #button {
     font-size: 2rem;
     padding: 2rem 3rem;
