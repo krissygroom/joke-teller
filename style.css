@@ -56,10 +56,6 @@ body {
   filter: brightness(30%);
 }
 
-#audio {
-  /* opacity: 0; */
-}
-
 
 /* Media Query - landscape tablet*/
 @media screen and (max-width: 1200px) { 
