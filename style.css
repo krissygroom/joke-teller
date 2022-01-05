@@ -1,0 +1,98 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #45badd;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('./robot.gif');
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+#button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 3.4rem;
+  padding: 2.8rem 4rem;
+  letter-spacing: 4px;
+  color: #fff;
+  background: #ff3482; 
+  border-radius: 5px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.1s;
+}
+
+#button:hover {
+  filter: brightness(90%);
+}
+
+#button:active {
+  transform: translateY(5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+#audio {
+  opacity: 0;
+}
+
+
+
+/* Media Query - tablet */
+@media screen and (max-width: 1200px) {
+  .container {
+    background-size: cover;
+    background-position: center -50px;
+  }
+  
+  #button {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    font-size: 2.8rem;
+    padding: 2.4rem 3.2rem;
+  } 
+}
+
+/* Media Query - small tablet or phone */
+@media screen and (max-width: 600px) { 
+  #button {
+    font-size: 2.4rem;
+    padding: 2.4rem 3.2rem;
+  } 
+}
+
+/* Media Query - small phone */
+@media screen and (max-width: 450px) { 
+  #button {
+    font-size: 2rem;
+    padding: 2rem 3rem;
+  } 
+}
+
+
+
+
+
