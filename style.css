@@ -66,8 +66,14 @@ body {
     background-size: cover;
     background-position: center -80px;
     justify-content: flex-end;
-    padding-bottom: 50px;
+    padding-bottom: 10rem;
   }
+
+  #button {
+    font-size: 2.8rem;
+    padding: 2rem 3rem;
+  } 
+
 }
 
 /* Media Query - phone */
