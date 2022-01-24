@@ -1,3 +1,4 @@
 # joke-teller
-Javascript projects course joke teller audio api project
+Javascript Projects Udemy Course - Joke Teller audio api project. 
+
 https://krissygroom.github.io/joke-teller/
